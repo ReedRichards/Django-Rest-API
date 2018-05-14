@@ -16,8 +16,10 @@ https://api.bvzzdesign.com
 /about-page
 ```
 
-| Permissions  | Authenticated or Read Only |
-| Request Type | GET POST                   |
+#### Permissions
+Authenticated or Read Only 
+#### Request Type   
+GET | POST                   
 
 #### example request GET
 
