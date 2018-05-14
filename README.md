@@ -11,8 +11,8 @@ https://api.bvzzdesign.com
 /lonehen
 ```
 
-### About Page
 ---
+### About Page
 ```
 /about-page/1/
 ```
@@ -25,13 +25,13 @@ Owner or Read Only
 ##### Request Type   
 GET | PUT 
 
-##### example request GET
+##### Example Request GET
 
 ```BASH
 curl https://api.bvzzdesign.com/lonehen/about-page/1/
 ```
 
-##### example response GET
+##### Example Response GET
 ```json
 {"id":1,"about_title":"Located in College Station, Texas, Lone Hen Winery is a real
 ly great winery with lots of awesome stuff going on. If you like wine, check this ou
@@ -57,7 +57,7 @@ ct":"block"}],"object":"document","data":{}}},"owner":"bvzz"}
 ```
 
 
-##### example request PUT
+##### Example Request PUT
 
 ```BASH
 curl 
@@ -73,12 +73,14 @@ curl
 -X PUT https://api.bvzzdesign.com/lonehen/about-page/ 
 ```
 
-##### example response PUT
+##### Example Response PUT
+
 TODO
 
 
-### Email
 ---
+---
+### Email
 ```
 /email/
 ```
@@ -88,8 +90,10 @@ sends email from rob@bvzzdesign.com to destination
 
 ##### Permissions
 Any
+###### Request type 
+POST
 
-##### example request POST
+##### Example Request POST
 ```bash
 curl 
 -d{
@@ -102,6 +106,39 @@ curl
 -H "Content-Type: application/json",
 -X PUT https://api.bvzzdesign.com/lonehen/email/
 ```
-##### example response POST
+##### Example Response POST
+
 TODO
 
+---
+
+### Checkout
+
+```
+/checkout/
+```
+
+create a charge to stripe
+
+##### Permissions
+Any
+##### Request Type 
+POST
+
+##### Example Request POST
+``` bash
+curl
+-d{
+    "token":$token,
+    "total":999,
+}
+-H "accept: application/json",
+-H "Content-Type: application/json",
+-X POST https://api.bvzzdesign.com/lonehen/checkout/
+```
+
+##### Example Response POST
+
+TODO
+
+---
