@@ -11,23 +11,23 @@ https://api.bvzzdesign.com
 /lonehen
 ```
 
-### About Page
+#### About Page
 ```
 /about-page
 ```
 
-#### Permissions
+##### Permissions
 Authenticated or Read Only 
-#### Request Type   
+##### Request Type   
 GET | POST                   
 
-#### example request GET
+##### example request GET
 
 ```BASH
 curl https://api.bvzzdesign.com/lonehen/about-page/ 
 ```
 
-#### example response GET
+##### example response GET
 ```json
 [{"id":1,"about_title":"Located in College Station, Texas, Lone Hen Winery is a real
 ly great winery with lots of awesome stuff going on. If you like wine, check this ou
