@@ -69,12 +69,13 @@ MIDDLEWARE = [
      'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware'
 ]
-CORS_ORIGIN_ALLOW_ALL = True
-# CORS_ORIGIN_WHITELIST = (
-#     'localhost:3000',
-#     'lonehen.bvzzdesign.com',
-#     '127.0.0.1:3000'
-# )
+# CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_WHITELIST = (
+    'localhost:3000',
+    'lonehen.bvzzdesign.com',
+    '127.0.0.1:3000',
+    '45.76.5.173'
+)
 ROOT_URLCONF = 'lonehen.urls'
 
 TEMPLATES = [
